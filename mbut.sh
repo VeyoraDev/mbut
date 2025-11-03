@@ -79,7 +79,7 @@ class ServerDeletionService
                 }
 
                 if ($ownerId !== $user->id) {
-                    throw new DisplayException('❌Akses ditolak: Anda hanya dapat menghapus server milik Anda sendiri');
+                    throw new DisplayException('❌Akses ditolak: Anda hanya dapat menghapus server milik Anda sendiri - ProtectVeyora');
                 }
             }
             // jika $user->id === 1, lanjutkan (admin super)
